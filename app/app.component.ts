@@ -1,6 +1,8 @@
 
 class AppController implements ng.IController {
       static $inject= ['$state'];
+      date1='';
+      date2='';
     constructor(public $state: ng.ui.IStateService) {
         $state.go('app.home');
     }

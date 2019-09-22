@@ -1,5 +1,5 @@
-# angularjs-ts-starter
-just a very simple starter project for angularjs 1.6 with typescript
+# angularjs-ts-starter with angular material datepicker
+ project for angularjs 1.6 with typescript
 
 ## Features
     - WebPack 

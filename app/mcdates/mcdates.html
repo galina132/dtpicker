@@ -1,0 +1,30 @@
+<div >
+    <md-content layout-padding ng-cloak>
+        <div layout-gt-xs="row">
+            <div flex = "30">
+                <h4>{{$ctrl.range.From}}</h4>
+                <md-datepicker
+                        ng-model="$ctrl.datefrom" ng-change="$ctrl.checkDateFrom()" md-placeholder="Enter date" md-hide-icons="calendar"></md-datepicker>
+            </div>
+
+            <div flex = "30">
+                <h4>{{$ctrl.range.To}}</h4>
+                <md-datepicker ng-model="$ctrl.dateto"  ng-change="$ctrl.checkDateTo()" md-placeholder="Enter date" md-hide-icons="calendar"></md-datepicker>
+            </div>
+        </div>
+
+    </md-content>
+</div>
+
+<div id = "layoutContainer"
+     style = "height:100px;" ng-cloak>
+    <div layout = "row" layout-xs = "column">
+        <div flex = "10" ><button mat-button ng-click="$ctrl.setDates(-1)">{{$ctrl.range.Yesterday}}</button></div>
+        <div flex = "10" ><button mat-button  ng-click="$ctrl.setDates(0)">{{$ctrl.range.Today}}</button></div>
+        <div flex = "20" ><button mat-button ng-click="$ctrl.setDates(-14)">{{$ctrl.range.TwoWeeksAgo}}</button></div>
+        <div flex = "10" ><button mat-button ng-click="$ctrl.setDates(30)">{{$ctrl.range.Month}}</button></div>
+        <div flex = "10" ><button mat-button ng-click="$ctrl.setDates()">{{$ctrl.range.All}}</button></div>
+    </div>
+
+</div>
+

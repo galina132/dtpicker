@@ -6,7 +6,6 @@ var LoaderOptionsPlugin = require("webpack/lib/LoaderOptionsPlugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-
     entry: {
         app: [
             './app/app.ts'
