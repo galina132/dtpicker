@@ -1,19 +1,7 @@
 import {Range} from '.././enums/enums';
 import * as moment from 'moment';
-
-interface ISomeComponentBindings {
-    datefrom: string;
-    dataBinding: number;
-    functionBinding: () => any;
-}
-
-interface ISomeComponentController extends ISomeComponentBindings {
-    add(): void;
-}
-
 class McDatesController implements ng.IController {
     range = Range;
-    isOpen = false;
     public datefrom: string;
     public dateto: any;
     public mcchange: () => any;
